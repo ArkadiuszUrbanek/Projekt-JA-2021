@@ -1,0 +1,3 @@
+LIBRARY xcadll
+EXPORTS DllMain
+EXPORTS Example

@@ -1,0 +1,2 @@
+^C:\USERS\AREK\DESKTOP\SOLUTION\XCADLL\XA.ASM
+ml64 /c /Zi /FoC:\Users\Arek\Desktop\Solution\x64\Debug\\xa.obj xa.asm
