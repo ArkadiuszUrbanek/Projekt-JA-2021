@@ -8,3 +8,13 @@ C:\Users\Arek\Desktop\Solution\xcs\obj\x64\Debug\xcs.csproj.CoreCompileInputs.ca
 C:\Users\Arek\Desktop\Solution\xcs\obj\x64\Debug\xcs.exe
 C:\Users\Arek\Desktop\Solution\xcs\obj\x64\Debug\xcs.pdb
 C:\Users\Arek\Desktop\Solution\xcs\obj\x64\Debug\xcs.csproj.AssemblyReference.cache
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\bin\x64\Debug\xcs.exe.config
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\bin\x64\Debug\xcs.exe
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\bin\x64\Debug\xcs.pdb
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.Form1.resources
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.Properties.Resources.resources
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.csproj.GenerateResource.cache
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.csproj.CoreCompileInputs.cache
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.exe
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.pdb
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcs\obj\x64\Debug\xcs.csproj.AssemblyReference.cache

@@ -1,5 +1,1 @@
-﻿  xcpp.cpp
-C:\Users\Arek\Desktop\Solution\xcppdll\xcpp.cpp(4,27): warning C4273: 'exemplary_procedure': inconsistent dll linkage
-C:\Users\Arek\Desktop\Solution\xcppdll\xcpp.h(9,50): message : see previous definition of 'exemplary_procedure'
-     Creating library C:\Users\Arek\Desktop\Solution\x64\Debug\xcppdll.lib and object C:\Users\Arek\Desktop\Solution\x64\Debug\xcppdll.exp
-  xcppdll.vcxproj -> C:\Users\Arek\Desktop\Solution\x64\Debug\xcppdll.dll
+﻿
