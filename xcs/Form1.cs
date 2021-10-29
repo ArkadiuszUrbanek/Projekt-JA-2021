@@ -42,5 +42,22 @@ namespace xcs
             //textBox3.Text = exemplary_procedure().ToString();
         }
 
+        private void numericNumberOfThreads_ValueChanged(object sender, EventArgs e)  {
+            if (numericNumberOfThreads.Value == numericNumberOfThreads.Maximum) {
+                numericNumberOfThreads.Value = numericNumberOfThreads.Minimum + 1;
+            }
+
+            if (numericNumberOfThreads.Value == numericNumberOfThreads.Minimum) {
+                numericNumberOfThreads.Value = numericNumberOfThreads.Maximum - 1;
+            }
+        }
+
+        private void numericWidthOfTheFirstMatix_ValueChanged(object sender, EventArgs e) {
+            numericHeightOfTheSecondMatix.Value = numericWidthOfTheFirstMatix.Value;
+        }
+
+        private void numericHeightOfTheSecondMatix_ValueChanged(object sender, EventArgs e) {
+            numericWidthOfTheFirstMatix.Value = numericHeightOfTheSecondMatix.Value;
+        }
     }
 }

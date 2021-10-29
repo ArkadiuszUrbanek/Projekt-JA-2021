@@ -12,9 +12,11 @@ namespace xcs
             InitializeComponent();
 
             this.Size = new Size(800, 600);
+            this.Padding = new Padding(20);
             this.Text = "Matrix multiplication";
-            this.StartPosition = FormStartPosition.CenterScreen;
+            this.StartPosition = FormStartPosition.CenterScreen;         
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            this.Font = new Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
 
             this.FormClosing += new FormClosingEventHandler(FormTemplate_FormClosing);
 
