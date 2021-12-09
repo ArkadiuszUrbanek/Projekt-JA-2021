@@ -1,1 +1,8 @@
-﻿
+﻿  pch.cpp
+  dllmain.cpp
+  xcpp.cpp
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcppdll\xcpp.cpp(4,27): warning C4273: 'exemplary_procedure': inconsistent dll linkage
+C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\xcppdll\xcpp.h(9,50): message : see previous definition of 'exemplary_procedure'
+  Generating Code...
+     Creating library C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcppdll.lib and object C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcppdll.exp
+  xcppdll.vcxproj -> C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcppdll.dll

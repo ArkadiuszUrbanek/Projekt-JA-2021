@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xcs", "xcs\xcs.csproj", "{79922C9A-D60F-4406-9D2F-80391B1CCBF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6DA24E9F-2275-49F3-A098-DD03AFA95B51} = {6DA24E9F-2275-49F3-A098-DD03AFA95B51}
+		{29F68CEC-99BA-4777-B884-9F7057E01D17} = {29F68CEC-99BA-4777-B884-9F7057E01D17}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xcadll", "xcadll\xcadll.vcxproj", "{6DA24E9F-2275-49F3-A098-DD03AFA95B51}"
 EndProject

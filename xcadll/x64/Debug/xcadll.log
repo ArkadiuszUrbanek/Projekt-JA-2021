@@ -1,1 +1,7 @@
-﻿
+﻿  Performing Custom Build Tools
+  Microsoft (R) Macro Assembler (x64) Version 14.29.30137.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+   Assembling: xa.asm
+     Creating library C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcadll.lib and object C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcadll.exp
+  xcadll.vcxproj -> C:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\xcadll.dll

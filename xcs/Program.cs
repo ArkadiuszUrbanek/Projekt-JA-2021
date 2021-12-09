@@ -34,8 +34,8 @@ namespace xcs
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            (new Form1()).Show();
-            Application.Run();
+            //(new Form1()).Show();
+            Application.Run(new Form1());
         }
     }
 }

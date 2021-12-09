@@ -56,18 +56,19 @@ namespace xcs
             // 
             this.buttonNext.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonNext.Location = new System.Drawing.Point(642, 510);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(118, 27);
             this.buttonNext.TabIndex = 0;
             this.buttonNext.Text = "Next";
             this.buttonNext.UseVisualStyleBackColor = true;
+            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
             // 
             // numericNumberOfThreads
             // 
             this.numericNumberOfThreads.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericNumberOfThreads.Location = new System.Drawing.Point(213, 153);
-            this.numericNumberOfThreads.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericNumberOfThreads.Margin = new System.Windows.Forms.Padding(4);
             this.numericNumberOfThreads.Maximum = new decimal(new int[] {
             65,
             0,
@@ -234,13 +235,13 @@ namespace xcs
             this.radioButtonAsm.Name = "radioButtonAsm";
             this.radioButtonAsm.Size = new System.Drawing.Size(190, 22);
             this.radioButtonAsm.TabIndex = 13;
-            this.radioButtonAsm.TabStop = true;
             this.radioButtonAsm.Text = "DLL written in MASM64";
             this.radioButtonAsm.UseVisualStyleBackColor = true;
             // 
             // radioButtonCpp
             // 
             this.radioButtonCpp.AutoSize = true;
+            this.radioButtonCpp.Checked = true;
             this.radioButtonCpp.Location = new System.Drawing.Point(27, 53);
             this.radioButtonCpp.Name = "radioButtonCpp";
             this.radioButtonCpp.Size = new System.Drawing.Size(154, 22);
@@ -281,9 +282,12 @@ namespace xcs
             this.Controls.Add(this.numericNumberOfThreads);
             this.Controls.Add(this.buttonNext);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(20);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Matrix multiplication";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericNumberOfThreads)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericHeightOfTheFirstMatix)).EndInit();

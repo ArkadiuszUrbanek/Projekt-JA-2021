@@ -1,0 +1,2 @@
+^C:\USERS\AREK\DESKTOP\PROJEKT JA\PROJEKT-JA-2021\XCADLL\XA.ASM
+ml64 /c /Zi /FoC:\Users\Arek\Desktop\projekt JA\Projekt-JA-2021\x64\Debug\\xa.obj xa.asm
