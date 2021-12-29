@@ -29,7 +29,7 @@ namespace xcs
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonNext = new System.Windows.Forms.Button();
+            this.buttonStart = new System.Windows.Forms.Button();
             this.numericNumberOfThreads = new System.Windows.Forms.NumericUpDown();
             this.labelNumberOfThreads = new System.Windows.Forms.Label();
             this.labelDimensionsOfTheFirstMatix = new System.Windows.Forms.Label();
@@ -52,17 +52,17 @@ namespace xcs
             ((System.ComponentModel.ISupportInitialize)(this.numericWidthOfTheSecondMatix)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonNext
+            // buttonStart
             // 
-            this.buttonNext.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonNext.Location = new System.Drawing.Point(642, 510);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonNext.Name = "buttonNext";
-            this.buttonNext.Size = new System.Drawing.Size(118, 27);
-            this.buttonNext.TabIndex = 0;
-            this.buttonNext.Text = "Next";
-            this.buttonNext.UseVisualStyleBackColor = true;
-            this.buttonNext.Click += new System.EventHandler(this.buttonNext_Click);
+            this.buttonStart.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonStart.Location = new System.Drawing.Point(642, 510);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStart.Name = "buttonStart";
+            this.buttonStart.Size = new System.Drawing.Size(118, 27);
+            this.buttonStart.TabIndex = 0;
+            this.buttonStart.Text = "Start algorithm";
+            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // numericNumberOfThreads
             // 
@@ -111,7 +111,7 @@ namespace xcs
             // 
             this.labelDimensionsOfTheSecondMatrix.AutoSize = true;
             this.labelDimensionsOfTheSecondMatrix.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelDimensionsOfTheSecondMatrix.Location = new System.Drawing.Point(23, 346);
+            this.labelDimensionsOfTheSecondMatrix.Location = new System.Drawing.Point(345, 222);
             this.labelDimensionsOfTheSecondMatrix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDimensionsOfTheSecondMatrix.Name = "labelDimensionsOfTheSecondMatrix";
             this.labelDimensionsOfTheSecondMatrix.Size = new System.Drawing.Size(302, 19);
@@ -139,7 +139,7 @@ namespace xcs
             // labelHeightOfTheSecondMatrix
             // 
             this.labelHeightOfTheSecondMatrix.AutoSize = true;
-            this.labelHeightOfTheSecondMatrix.Location = new System.Drawing.Point(24, 382);
+            this.labelHeightOfTheSecondMatrix.Location = new System.Drawing.Point(346, 260);
             this.labelHeightOfTheSecondMatrix.Name = "labelHeightOfTheSecondMatrix";
             this.labelHeightOfTheSecondMatrix.Size = new System.Drawing.Size(41, 18);
             this.labelHeightOfTheSecondMatrix.TabIndex = 7;
@@ -148,7 +148,7 @@ namespace xcs
             // labelWidthOfTheSecondMatrix
             // 
             this.labelWidthOfTheSecondMatrix.AutoSize = true;
-            this.labelWidthOfTheSecondMatrix.Location = new System.Drawing.Point(24, 416);
+            this.labelWidthOfTheSecondMatrix.Location = new System.Drawing.Point(346, 292);
             this.labelWidthOfTheSecondMatrix.Name = "labelWidthOfTheSecondMatrix";
             this.labelWidthOfTheSecondMatrix.Size = new System.Drawing.Size(65, 18);
             this.labelWidthOfTheSecondMatrix.TabIndex = 8;
@@ -157,13 +157,18 @@ namespace xcs
             // numericHeightOfTheFirstMatix
             // 
             this.numericHeightOfTheFirstMatix.Location = new System.Drawing.Point(95, 258);
+            this.numericHeightOfTheFirstMatix.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericHeightOfTheFirstMatix.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericHeightOfTheFirstMatix.Name = "numericHeightOfTheFirstMatix";
-            this.numericHeightOfTheFirstMatix.Size = new System.Drawing.Size(49, 26);
+            this.numericHeightOfTheFirstMatix.Size = new System.Drawing.Size(57, 26);
             this.numericHeightOfTheFirstMatix.TabIndex = 9;
             this.numericHeightOfTheFirstMatix.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericHeightOfTheFirstMatix.Value = new decimal(new int[] {
@@ -175,13 +180,18 @@ namespace xcs
             // numericWidthOfTheFirstMatix
             // 
             this.numericWidthOfTheFirstMatix.Location = new System.Drawing.Point(95, 290);
+            this.numericWidthOfTheFirstMatix.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericWidthOfTheFirstMatix.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericWidthOfTheFirstMatix.Name = "numericWidthOfTheFirstMatix";
-            this.numericWidthOfTheFirstMatix.Size = new System.Drawing.Size(49, 26);
+            this.numericWidthOfTheFirstMatix.Size = new System.Drawing.Size(57, 26);
             this.numericWidthOfTheFirstMatix.TabIndex = 10;
             this.numericWidthOfTheFirstMatix.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericWidthOfTheFirstMatix.Value = new decimal(new int[] {
@@ -193,14 +203,19 @@ namespace xcs
             // 
             // numericHeightOfTheSecondMatix
             // 
-            this.numericHeightOfTheSecondMatix.Location = new System.Drawing.Point(95, 380);
+            this.numericHeightOfTheSecondMatix.Location = new System.Drawing.Point(417, 258);
+            this.numericHeightOfTheSecondMatix.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericHeightOfTheSecondMatix.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericHeightOfTheSecondMatix.Name = "numericHeightOfTheSecondMatix";
-            this.numericHeightOfTheSecondMatix.Size = new System.Drawing.Size(49, 26);
+            this.numericHeightOfTheSecondMatix.Size = new System.Drawing.Size(57, 26);
             this.numericHeightOfTheSecondMatix.TabIndex = 11;
             this.numericHeightOfTheSecondMatix.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericHeightOfTheSecondMatix.Value = new decimal(new int[] {
@@ -212,14 +227,19 @@ namespace xcs
             // 
             // numericWidthOfTheSecondMatix
             // 
-            this.numericWidthOfTheSecondMatix.Location = new System.Drawing.Point(95, 414);
+            this.numericWidthOfTheSecondMatix.Location = new System.Drawing.Point(417, 290);
+            this.numericWidthOfTheSecondMatix.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.numericWidthOfTheSecondMatix.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericWidthOfTheSecondMatix.Name = "numericWidthOfTheSecondMatix";
-            this.numericWidthOfTheSecondMatix.Size = new System.Drawing.Size(49, 26);
+            this.numericWidthOfTheSecondMatix.Size = new System.Drawing.Size(57, 26);
             this.numericWidthOfTheSecondMatix.TabIndex = 12;
             this.numericWidthOfTheSecondMatix.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.numericWidthOfTheSecondMatix.Value = new decimal(new int[] {
@@ -237,6 +257,7 @@ namespace xcs
             this.radioButtonAsm.TabIndex = 13;
             this.radioButtonAsm.Text = "DLL written in MASM64";
             this.radioButtonAsm.UseVisualStyleBackColor = true;
+            this.radioButtonAsm.CheckedChanged += new System.EventHandler(this.radioButtonAsm_CheckedChanged);
             // 
             // radioButtonCpp
             // 
@@ -249,6 +270,7 @@ namespace xcs
             this.radioButtonCpp.TabStop = true;
             this.radioButtonCpp.Text = "DLL written in C++";
             this.radioButtonCpp.UseVisualStyleBackColor = true;
+            this.radioButtonCpp.CheckedChanged += new System.EventHandler(this.radioButtonCpp_CheckedChanged);
             // 
             // labelSelectedLibrary
             // 
@@ -280,7 +302,7 @@ namespace xcs
             this.Controls.Add(this.labelDimensionsOfTheFirstMatix);
             this.Controls.Add(this.labelNumberOfThreads);
             this.Controls.Add(this.numericNumberOfThreads);
-            this.Controls.Add(this.buttonNext);
+            this.Controls.Add(this.buttonStart);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -301,7 +323,7 @@ namespace xcs
 
         #endregion
 
-        private System.Windows.Forms.Button buttonNext;
+        private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.NumericUpDown numericNumberOfThreads;
         private System.Windows.Forms.Label labelNumberOfThreads;
         private System.Windows.Forms.Label labelDimensionsOfTheFirstMatix;

@@ -1,6 +1,15 @@
 #include "pch.h"
 #include "xcpp.h"
 
-int exemplary_procedure() {
-	return 1212;
+
+extern "C" {
+
+	_declspec(dllexport) void __cdecl calculateSubmatrix(int* firstFlattenedSubmatrix, int firstFlattenedSubmatrixWidth, int firstFlattenedSubmatrixHeight, int* secondFlattenedSubmatrix, int secondFlattenedSubmatrixWidth, int secondFlattenedSubmatrixHeight, int* resultFlattenedSubmatrix) {
+
+	}
+
+	/*_declspec(dllexport) void calculateSubmatrix(int* firstFlattenedSubmatrix, int firstFlattenedSubmatrixWidth, int firstFlattenedSubmatrixHeight, int* secondFlattenedSubmatrix, int secondFlattenedSubmatrixWidth, int secondFlattenedSubmatrixHeight, int* resultFlattenedSubmatrix) {
+
+	}*/
+
 }
