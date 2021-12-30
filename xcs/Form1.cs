@@ -64,6 +64,8 @@ namespace xcs
         private List<int[]> listOfFirstMatrixRows = new List<int[]>();
         private List<int[]> listOfSecondMatrixRows = new List<int[]>();
 
+        static Mutex mutexObj = new Mutex();
+
         //private List<int[][]> listOfResultSubmatrices = new List<int[][]>();
         //private List<int[]> listOfResultFlattenedSubmatrices = new List<int[]>();
 
@@ -178,7 +180,18 @@ namespace xcs
 
             }
 
+            //Zapis podmacierzy do macierzy wynikowej
+            mutexObj.WaitOne();
 
+            for (int i = rowIndexFromWhichSubmatixBegins; i < firstSubmatrixHeight + rowIndexFromWhichSubmatixBegins; i++) {
+                for (int j = 0; j < secondMatrixWidth; j++) {
+                    resultMatrix[i,j] = resultFlattenedSubmatrix[(i - rowIndexFromWhichSubmatixBegins) * secondMatrixWidth + j];
+
+                }
+            
+            }
+
+            mutexObj.ReleaseMutex();
 
         } 
         private void buttonStart_Click(object sender, EventArgs e) {
@@ -269,7 +282,7 @@ namespace xcs
                 }
 
                 //Stworzenie macierzy wynikowej
-                int[,] resultMatrix = new int[firstMatrixWidth, secondMatrixHeight];
+                int[,] resultMatrix = new int[firstMatrixHeight, secondMatrixWidth];
 
                 //Stworzenie tablicy wątków
                 Thread[] threadsArray = new Thread[(int) numericNumberOfThreads.Value];
@@ -324,6 +337,24 @@ namespace xcs
                 //Pobranie zmierzonego czasu
                 TimeSpan ts = stopwatch.Elapsed;
                 Console.WriteLine("Elapsed Time is {0:00}:{1:00}:{2:00}.{3}", ts.Hours, ts.Minutes, ts.Seconds, ts.Milliseconds);
+
+                //Zapis macierzy wynikowej do pliku csv
+                StreamWriter fileWriter = new StreamWriter("result_matrix.csv", false);
+
+                for (int i = 0; i < firstMatrixHeight; i++) {
+                    for (int j = 0; j < secondMatrixWidth; j++) {
+
+
+                        if (j == secondMatrixWidth - 1) fileWriter.Write(resultMatrix[i, j]);
+                        else fileWriter.Write(resultMatrix[i, j] + ";");
+
+                    }
+                    fileWriter.WriteLine("");
+                    fileWriter.Flush();
+
+                }
+
+                fileWriter.Close();
 
             }
 
