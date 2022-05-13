@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixMultiplication", "MatrixMultiplication\MatrixMultiplication.csproj", "{246C3D2B-A6D1-45B5-8451-016BEF035DDA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06} = {AA6AFB46-53D7-4441-8079-FEA975D6EC06}
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2} = {9268FE7B-2E96-4727-A629-E569C14AD6C2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixMultiplicationMASM64", "MatrixMultiplicationMASM64\MatrixMultiplicationMASM64.vcxproj", "{AA6AFB46-53D7-4441-8079-FEA975D6EC06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MatrixMultiplicationCPP", "MatrixMultiplicationCPP\MatrixMultiplicationCPP.vcxproj", "{9268FE7B-2E96-4727-A629-E569C14AD6C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|x64.ActiveCfg = Debug|x64
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|x64.Build.0 = Debug|x64
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Debug|x86.Build.0 = Debug|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|x64.ActiveCfg = Release|x64
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|x64.Build.0 = Release|x64
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|x86.ActiveCfg = Release|Any CPU
+		{246C3D2B-A6D1-45B5-8451-016BEF035DDA}.Release|x86.Build.0 = Release|Any CPU
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Debug|x64.ActiveCfg = Debug|x64
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Debug|x64.Build.0 = Debug|x64
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Debug|x86.Build.0 = Debug|Win32
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Release|Any CPU.ActiveCfg = Release|Win32
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Release|x64.ActiveCfg = Release|x64
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Release|x64.Build.0 = Release|x64
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Release|x86.ActiveCfg = Release|Win32
+		{AA6AFB46-53D7-4441-8079-FEA975D6EC06}.Release|x86.Build.0 = Release|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Debug|x64.ActiveCfg = Debug|x64
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Debug|x64.Build.0 = Debug|x64
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Debug|x86.ActiveCfg = Debug|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Debug|x86.Build.0 = Debug|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Release|Any CPU.ActiveCfg = Release|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Release|x64.ActiveCfg = Release|x64
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Release|x64.Build.0 = Release|x64
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Release|x86.ActiveCfg = Release|Win32
+		{9268FE7B-2E96-4727-A629-E569C14AD6C2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96966998-ED27-45FA-8191-9E307C02ED37}
+	EndGlobalSection
+EndGlobal

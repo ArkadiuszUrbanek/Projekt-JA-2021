@@ -1,0 +1,10 @@
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\bin\x64\Release\MatrixMultiplication.exe.config
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\bin\x64\Release\MatrixMultiplication.exe
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\bin\x64\Release\MatrixMultiplication.pdb
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.csproj.AssemblyReference.cache
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.Form1.resources
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.Properties.Resources.resources
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.csproj.GenerateResource.cache
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.csproj.CoreCompileInputs.cache
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.exe
+C:\Users\Arek\Desktop\MatrixMultiplication\MatrixMultiplication\obj\x64\Release\MatrixMultiplication.pdb
