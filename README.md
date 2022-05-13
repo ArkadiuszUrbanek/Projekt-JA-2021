@@ -1,1 +1,1 @@
-#Projekt JA
+# Wielowątkowy program mnożący macierze
